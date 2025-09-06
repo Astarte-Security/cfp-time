@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0014;
+  color: #b8a0ff;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.terminal {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(180deg, #0a0014 0%, #1a0d2e 100%);
+  position: relative;
+}
+
+.terminal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(184, 160, 255, 0.03),
+    rgba(184, 160, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+}
+
+.header {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.ascii-art {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ascii-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.ascii-text {
+  display: block;
+  color: #9d4edd;
+  font-size: 20px;
+  line-height: 1.1;
+  text-shadow: 0 0 10px rgba(157, 78, 221, 0.3);
+  letter-spacing: 2px;
+  white-space: pre;
+}
+
+.subtitle {
+  color: #c77dff;
+  font-size: 18px;
+  letter-spacing: 3px;
+  padding: 10px 20px;
+  border: 1px solid #7b3f99;
+  border-left: none;
+  border-right: none;
+  display: inline-block;
+}
+
+.system-info {
+  color: #7b3f99;
+  border-top: 1px solid #4a2766;
+  border-bottom: 1px solid #4a2766;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.prompt {
+  color: #c77dff;
+  font-weight: bold;
+}
+
+.timestamp {
+  color: #7b3f99;
+  opacity: 0.8;
+}
+
+.loading {
+  text-align: center;
+  padding: 100px 20px;
+  color: #9d4edd;
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.error {
+  color: #ff6b6b;
+  padding: 20px;
+  border: 1px solid #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+  margin: 20px 0;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.conference-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.conference-table thead {
+  background: rgba(123, 63, 153, 0.2);
+  border-bottom: 2px solid #7b3f99;
+}
+
+.conference-table th {
+  padding: 12px 10px;
+  text-align: left;
+  color: #c77dff;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-right: 1px solid #4a2766;
+}
+
+.conference-table th:last-child {
+  border-right: none;
+}
+
+.conference-table tbody tr {
+  border-bottom: 1px solid #2a1a4e;
+  transition: all 0.2s ease;
+}
+
+.conference-table tbody tr:nth-child(even) {
+  background: rgba(123, 63, 153, 0.08);
+}
+
+.conference-table tbody tr:hover {
+  background: rgba(157, 78, 221, 0.15);
+}
+
+.conference-table td {
+  padding: 10px;
+  color: #b8a0ff;
+  border-right: 1px solid #2a1a4e;
+}
+
+.conference-table td:last-child {
+  border-right: none;
+}
+
+.conference-table a {
+  color: #e0aaff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px dotted #9d4edd;
+}
+
+.conference-table a:hover {
+  color: #f0d6ff;
+  text-shadow: 0 0 8px rgba(224, 170, 255, 0.6);
+  border-bottom-style: solid;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status-badge {
+  padding: 3px 8px;
+  border: 1px solid;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.status.expired .status-badge {
+  color: #666;
+  border-color: #666;
+  background: rgba(102, 102, 102, 0.1);
+}
+
+.status.today .status-badge {
+  color: #ff00ff;
+  border-color: #ff00ff;
+  background: rgba(255, 0, 255, 0.2);
+  animation: pulse 1s infinite;
+}
+
+.status.tomorrow .status-badge {
+  color: #ff00ff;
+  border-color: #ff00ff;
+  background: rgba(255, 0, 255, 0.2);
+  animation: pulse 1s infinite;
+}
+
+.status.urgent .status-badge {
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.status.soon .status-badge {
+  color: #ffd93d;
+  border-color: #ffd93d;
+  background: rgba(255, 217, 61, 0.1);
+}
+
+.status.normal .status-badge {
+  color: #6bcf7f;
+  border-color: #6bcf7f;
+  background: rgba(107, 207, 127, 0.1);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.cfp-link {
+  padding: 2px 6px;
+  background: rgba(157, 78, 221, 0.2);
+  border: 1px solid #7b3f99;
+  border-radius: 2px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.cfp-link:hover {
+  background: rgba(157, 78, 221, 0.4);
+  border-color: #9d4edd;
+}
+
+.expired-toggle {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.toggle-button {
+  background: transparent;
+  border: 1px solid #7b3f99;
+  color: #b8a0ff;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 1px;
+}
+
+.toggle-button:hover {
+  background: rgba(123, 63, 153, 0.2);
+  color: #e0aaff;
+  border-color: #9d4edd;
+  text-shadow: 0 0 8px rgba(224, 170, 255, 0.3);
+}
+
+.toggle-button .prompt {
+  color: #c77dff;
+  margin-right: 5px;
+}
+
+.footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #4a2766;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-text {
+  color: #7b3f99;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.footer-link {
+  color: #e0aaff;
+  text-decoration: none;
+  border-bottom: 1px dotted #9d4edd;
+  transition: all 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #f0d6ff;
+  text-shadow: 0 0 8px rgba(224, 170, 255, 0.6);
+  border-bottom-style: solid;
+}
+
+.scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(184, 160, 255, 0.02) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 2;
+  animation: scanlines 8s linear infinite;
+}
+
+@keyframes scanlines {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 10px; }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .ascii-text {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  
+  .conference-table {
+    font-size: 14px;
+  }
+  
+  .conference-table th,
+  .conference-table td {
+    padding: 8px 5px;
+  }
+  
+  .status-badge {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+}
