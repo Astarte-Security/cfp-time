@@ -16,6 +16,7 @@ List of cybersecurity conference CFP deadlines.
 | [BSides Cymru](https://www.bsides.cymru/) | September 12, 2025 | October 17, 2025 | Cardiff, Wales | [CFP Link](https://pretalx.com/bsides-cymru-2025/cfp) |
 | [DistrictCon](https://www.districtcon.org/) | September 28, 2025 | January 24-25, 2026 | Washington DC | [Sessionize](https://sessionize.com/districtcon) |
 | [RE//verse](https://re-verse.io/) | November 14, 2025 | Mar 5-7, 2026 | Orlando, FL | [Sessionize](https://sessionize.com/reverse-2026) |
+| [BSides Pyongyang](https://bsidespyongyang.com/) | September 22, 2025 | November 18, 2025 | [CFP](https://docs.google.com/forms/d/e/1FAIpQLScz9MfOjoQcU432QyYM5z20G5Y8KiWJCfjnIWuCDcu5V778xw/viewform) |
 
 
 ## How to add a conference
