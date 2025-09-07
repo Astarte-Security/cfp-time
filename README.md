@@ -17,6 +17,7 @@ List of cybersecurity conference CFP deadlines.
 | [DistrictCon](https://www.districtcon.org/) | September 28, 2025 | January 24-25, 2026 | Washington DC | [Sessionize](https://sessionize.com/districtcon) |
 | [RE//verse](https://re-verse.io/) | November 14, 2025 | Mar 5-7, 2026 | Orlando, FL | [Sessionize](https://sessionize.com/reverse-2026) |
 | [BSides Pyongyang](https://bsidespyongyang.com/) | September 22, 2025 | November 18, 2025 | Pyongyang, DPRK & Virtual | [CFP](https://docs.google.com/forms/d/e/1FAIpQLScz9MfOjoQcU432QyYM5z20G5Y8KiWJCfjnIWuCDcu5V778xw/viewform) |
+| [BSides Limburg](https://www.bsides-limburg.be/) | October 31, 2025 | March 13, 2026 | Limburg, Belgium | [CFP](https://www.bsides-limburg.be/2026-edition/cfx/call-for-presentations) |
 | [CactusCon](https://www.cactuscon.com/) | October 24, 2025 | February 6-7, 2026 | Mesa, AZ | [Sessionize](https://sessionize.com/cactuscon-14/) |
 
 
