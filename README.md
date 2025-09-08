@@ -1,6 +1,6 @@
 # CFP TIME
 
-List of cybersecurity conference CFP deadlines.
+List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https://cfp.hex.dance/).
 
 | Conference | CFP Ends | Conference Date | Location | CFP Link |
 | ---------- | -------- | --------------- | -------- | -------- |
@@ -25,3 +25,5 @@ List of cybersecurity conference CFP deadlines.
 ## How to add a conference
 
 Open an Issue in this repo, or preferably, open a Pull Request editing this README file directly. It will auto-update the site.
+
+Don't worry about the order, just append a new line to the end of the table. 
