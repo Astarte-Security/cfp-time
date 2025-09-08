@@ -20,6 +20,8 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 | [BSides Limburg](https://www.bsides-limburg.be/) | October 31, 2025 | March 13, 2026 | Limburg, Belgium | [CFP](https://www.bsides-limburg.be/2026-edition/cfx/call-for-presentations) |
 | [CactusCon](https://www.cactuscon.com/) | October 24, 2025 | February 6-7, 2026 | Mesa, AZ | [Sessionize](https://sessionize.com/cactuscon-14/) |
 | [QueenCityCon](https://queencitycon.org/) | October 10, 2025 | November 7-9, 2025 | Cincinatti, OH | [CFP](https://forms.office.com/pages/responsepage.aspx?id=zKNxFqbgKEqwyXlYS8GWDZgj327xWYVPtlTS4DEr6RBUME5GVjNESTY3UDZZTEYzVjBRWUpWNVFPSSQlQCN0PWcu&route=shorturl) |
+| [BSidesRedRocks](https://www.bsidesredrocks.org/) | September 26, 2025 | November 14, 2025 | Saint George, UT | [CFP](https://sessionize.com/bsidesredrocks-2025/) |
+| [CarolinaCon](https://carolinacon.org/) | October 5, 2025 | November 8-9, 2025 | Raleigh, NC & Virtual | [CFP](https://cfp.carolinacon.org/carolinacon-online-5-2024/cfp) |
 
 
 ## How to add a conference
