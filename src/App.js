@@ -106,6 +106,9 @@ function App() {
     return { text: `${diffDays} DAYS`, class: 'normal' };
   };
 
+  // Get all unique labels from conferences
+  const allLabels = [...new Set(conferences.flatMap(conf => conf.labels || []))].sort();
+
   // Filter conferences by labels
   const filteredConferences = conferences.filter(conf => {
     if (eventTypeFilter === 'all') return true;
@@ -165,18 +168,15 @@ function App() {
               >
                 ALL EVENTS
               </button>
-              <button 
-                className={`filter-button ${eventTypeFilter === 'community' ? 'active' : ''}`}
-                onClick={() => setEventTypeFilter('community')}
-              >
-                COMMUNITY
-              </button>
-              <button 
-                className={`filter-button ${eventTypeFilter === 'bsides' ? 'active' : ''}`}
-                onClick={() => setEventTypeFilter('bsides')}
-              >
-                BSIDES
-              </button>
+              {allLabels.map(label => (
+                <button 
+                  key={label}
+                  className={`filter-button ${eventTypeFilter === label ? 'active' : ''}`}
+                  onClick={() => setEventTypeFilter(label)}
+                >
+                  {label.toUpperCase()}
+                </button>
+              ))}
             </div>
             <table className="conference-table">
               <thead>
@@ -187,7 +187,6 @@ function App() {
                   <th>CONFERENCE DATE</th>
                   <th>LOCATION</th>
                   <th>SUBMIT</th>
-                  <th>LABELS</th>
                 </tr>
               </thead>
               <tbody>
@@ -217,17 +216,6 @@ function App() {
                           </a>
                         ) : (
                           conf.cfpLinkText
-                        )}
-                      </td>
-                      <td>
-                        {conf.labels && conf.labels.length > 0 ? (
-                          <span className="labels">
-                            {conf.labels.map((label, idx) => (
-                              <span key={idx} className="label-tag">{label}</span>
-                            ))}
-                          </span>
-                        ) : (
-                          ''
                         )}
                       </td>
                     </tr>

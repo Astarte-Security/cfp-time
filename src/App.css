@@ -173,21 +173,6 @@ body {
   text-shadow: 0 0 10px rgba(240, 214, 255, 0.4);
 }
 
-.labels {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-
-.label-tag {
-  background: rgba(157, 78, 221, 0.2);
-  border: 1px solid #7b3f99;
-  color: #e0aaff;
-  padding: 2px 6px;
-  border-radius: 2px;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-}
 
 .conference-table {
   width: 100%;

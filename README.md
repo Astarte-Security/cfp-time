@@ -12,7 +12,7 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 
 | Conference | CFP Ends | Conference Date | Location | CFP Link | Labels |
 | ---------- | -------- | --------------- | -------- | -------- | ------ |
-| [CypherCon 9](https://cyphercon.com/) | January 12, 2026 | April 1-2, 2026 | Milwaukee, WI | [Sessionize](https://sessionize.com/cyphercon-9-2026) | [community] |
+| [CypherCon 9](https://cyphercon.com/) | January 12, 2026 | April 1-2, 2026 | Milwaukee, WI | [Sessionize](https://sessionize.com/cyphercon-9-2026) | [community, wisconsin] |
 | [Wild West Hackin' Fest @ Mile High 2026](https://wildwesthackinfest.com/wild-west-hackin-fest-mile-high-2026/) | November 3, 2025 | February 11-13, 2026 | Denver, CO | [CFP Link](https://forms.monday.com/forms/5d241d1d2c2dd2a866fdadbe47b88707?r=use1) | [community, specialized] |
 | [The Elephant In AppSec](https://www.theelephantinappsec.com/) | October 15, 2025 | January 14-15, 2026 | Remote | [CFP Link](https://yr17lg1xip3.typeform.com/to/PFe2GbM4) | [community, specialized] |
 | [SecretCon](https://www.secretcon.com/) | February 28, 2026 | June 4-5, 2026 | St Paul, MN | [Sessionize](https://sessionize.com/secretcon) | [community] |
@@ -29,7 +29,7 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 | [CactusCon](https://www.cactuscon.com/) | October 24, 2025 | February 6-7, 2026 | Mesa, AZ | [Sessionize](https://sessionize.com/cactuscon-14/) | [community] |
 | [QueenCityCon](https://queencitycon.org/) | October 10, 2025 | November 7-9, 2025 | Cincinatti, OH | [CFP](https://forms.office.com/pages/responsepage.aspx?id=zKNxFqbgKEqwyXlYS8GWDZgj327xWYVPtlTS4DEr6RBUME5GVjNESTY3UDZZTEYzVjBRWUpWNVFPSSQlQCN0PWcu&route=shorturl) | [community] |
 | [BSidesRedRocks](https://www.bsidesredrocks.org/) | September 26, 2025 | November 14, 2025 | Saint George, UT | [CFP](https://sessionize.com/bsidesredrocks-2025/) | [bsides, community] |
-| [CarolinaCon](https://carolinacon.org/) | October 5, 2025 | November 8-9, 2025 | Raleigh, NC & Virtual | [CFP](https://cfp.carolinacon.org/carolinacon-online-5-2024/cfp) | [community] |
+| [CarolinaCon](https://carolinacon.org/) | October 5, 2025 | November 8-9, 2025 | Raleigh, NC & Virtual | [CFP](https://cfp.carolinacon.org/carolinacon-online-5-2024/cfp) | [community, eastcoast] |
 
 
 ## How to add a conference
