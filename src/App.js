@@ -7,6 +7,7 @@ function App() {
   const [error, setError] = useState(null);
   const [lastUpdated, setLastUpdated] = useState(null);
   const [showExpired, setShowExpired] = useState(false);
+  const [eventTypeFilter, setEventTypeFilter] = useState('all');
 
   useEffect(() => {
     fetchReadmeData();
@@ -60,6 +61,10 @@ function App() {
           const cfpLinkText = cfpLinkMatch ? cfpLinkMatch[1] : parts[4].trim();
           const cfpLinkUrl = cfpLinkMatch ? cfpLinkMatch[2] : '';
           
+          // Parse labels if present (format: [label1,label2])
+          const labelsMatch = parts[5] ? parts[5].match(/\[([^\]]+)\]/) : null;
+          const labels = labelsMatch ? labelsMatch[1].split(',').map(l => l.trim()) : [];
+          
           tableData.push({
             name: conferenceName,
             url: conferenceUrl,
@@ -67,7 +72,8 @@ function App() {
             conferenceDate: parts[2].trim(),
             location: parts[3].trim(),
             cfpLinkText: cfpLinkText,
-            cfpLinkUrl: cfpLinkUrl
+            cfpLinkUrl: cfpLinkUrl,
+            labels: labels
           });
         }
       } else if (inTable && !line.startsWith('|')) {
@@ -85,6 +91,7 @@ function App() {
     setConferences(sortedData);
   };
 
+
   const getDaysUntilDeadline = (dateStr) => {
     const deadline = new Date(dateStr);
     const today = new Date();
@@ -99,13 +106,22 @@ function App() {
     return { text: `${diffDays} DAYS`, class: 'normal' };
   };
 
-  // Separate active and expired conferences
-  const activeConferences = conferences.filter(conf => {
+  // Get all unique labels from conferences
+  const allLabels = [...new Set(conferences.flatMap(conf => conf.labels || []))].sort();
+
+  // Filter conferences by labels
+  const filteredConferences = conferences.filter(conf => {
+    if (eventTypeFilter === 'all') return true;
+    return conf.labels && conf.labels.includes(eventTypeFilter);
+  });
+
+  // Separate active and expired conferences from filtered results
+  const activeConferences = filteredConferences.filter(conf => {
     const daysInfo = getDaysUntilDeadline(conf.cfpEnds);
     return daysInfo.class !== 'expired';
   });
 
-  const expiredConferences = conferences.filter(conf => {
+  const expiredConferences = filteredConferences.filter(conf => {
     const daysInfo = getDaysUntilDeadline(conf.cfpEnds);
     return daysInfo.class === 'expired';
   });
@@ -144,6 +160,24 @@ function App() {
           </div>
         ) : (
           <div className="table-container">
+            <div className="filter-controls">
+              <span className="prompt">[FILTER]</span>
+              <button 
+                className={`filter-button ${eventTypeFilter === 'all' ? 'active' : ''}`}
+                onClick={() => setEventTypeFilter('all')}
+              >
+                ALL EVENTS
+              </button>
+              {allLabels.map(label => (
+                <button 
+                  key={label}
+                  className={`filter-button ${eventTypeFilter === label ? 'active' : ''}`}
+                  onClick={() => setEventTypeFilter(label)}
+                >
+                  {label.toUpperCase()}
+                </button>
+              ))}
+            </div>
             <table className="conference-table">
               <thead>
                 <tr>

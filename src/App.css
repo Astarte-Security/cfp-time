@@ -132,6 +132,48 @@ body {
   z-index: 1;
 }
 
+.filter-controls {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #4a2766;
+  border-bottom: 1px solid #4a2766;
+}
+
+.filter-controls .prompt {
+  color: #c77dff;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.filter-button {
+  background: transparent;
+  border: 1px solid #7b3f99;
+  color: #b8a0ff;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 1px;
+}
+
+.filter-button:hover {
+  background: rgba(123, 63, 153, 0.2);
+  color: #e0aaff;
+  border-color: #9d4edd;
+  text-shadow: 0 0 8px rgba(224, 170, 255, 0.3);
+}
+
+.filter-button.active {
+  background: rgba(157, 78, 221, 0.3);
+  color: #f0d6ff;
+  border-color: #c77dff;
+  text-shadow: 0 0 10px rgba(240, 214, 255, 0.4);
+}
+
+
 .conference-table {
   width: 100%;
   border-collapse: collapse;
