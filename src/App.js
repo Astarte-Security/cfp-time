@@ -8,6 +8,7 @@ function App() {
   const [lastUpdated, setLastUpdated] = useState(null);
   const [showExpired, setShowExpired] = useState(false);
   const [eventTypeFilter, setEventTypeFilter] = useState('all');
+  const [showAllFilters, setShowAllFilters] = useState(false);
 
   useEffect(() => {
     fetchReadmeData();
@@ -106,8 +107,33 @@ function App() {
     return { text: `${diffDays} DAYS`, class: 'normal' };
   };
 
-  // Get all unique labels from conferences
-  const allLabels = [...new Set(conferences.flatMap(conf => conf.labels || []))].sort();
+  // Get all unique labels from conferences with custom ordering
+  const labelOrder = ['US', 'EU', 'ASIA', 'REMOTE', 'EASTCOAST', 'MIDWEST', 'WESTCOAST', 'BSIDES', 'COMMERCIAL', 'COMMUNITY', 'SPECIALIZED'];
+  const uniqueLabels = [...new Set(conferences.flatMap(conf => conf.labels || []))];
+  const allLabels = uniqueLabels.sort((a, b) => {
+    const aIndex = labelOrder.indexOf(a.toUpperCase());
+    const bIndex = labelOrder.indexOf(b.toUpperCase());
+    
+    // If both are in the custom order, sort by that order
+    if (aIndex !== -1 && bIndex !== -1) {
+      return aIndex - bIndex;
+    }
+    // If only a is in custom order, it comes first
+    if (aIndex !== -1) return -1;
+    // If only b is in custom order, it comes first
+    if (bIndex !== -1) return 1;
+    // If neither are in custom order, sort alphabetically
+    return a.localeCompare(b);
+  });
+
+  // Count conferences for each label
+  const labelCounts = {};
+  allLabels.forEach(label => {
+    labelCounts[label] = conferences.filter(conf => 
+      conf.labels && conf.labels.includes(label) && 
+      getDaysUntilDeadline(conf.cfpEnds).class !== 'expired'
+    ).length;
+  });
 
   // Filter conferences by labels
   const filteredConferences = conferences.filter(conf => {
@@ -142,12 +168,6 @@ function App() {
             </div>
             <div className="subtitle">CYBERSECURITY CONFERENCE DEADLINES</div>
           </div>
-          <div className="system-info">
-            <span className="prompt">[SYSTEM]</span> TRACKING {activeConferences.length} ACTIVE / {expiredConferences.length} CLOSED
-            {lastUpdated && (
-              <span className="timestamp"> | LAST SYNC: {lastUpdated.toLocaleTimeString()}</span>
-            )}
-          </div>
         </div>
 
         {loading ? (
@@ -160,23 +180,56 @@ function App() {
           </div>
         ) : (
           <div className="table-container">
+            <div className="system-info">
+              <span className="prompt">[SYSTEM]</span> TRACKING {activeConferences.length} ACTIVE / {expiredConferences.length} CLOSED
+              {lastUpdated && (
+                <span className="timestamp"> | LAST SYNC: {lastUpdated.toLocaleTimeString()}</span>
+              )}
+            </div>
             <div className="filter-controls">
               <span className="prompt">[FILTER]</span>
               <button 
                 className={`filter-button ${eventTypeFilter === 'all' ? 'active' : ''}`}
                 onClick={() => setEventTypeFilter('all')}
               >
-                ALL EVENTS
+                ALL EVENTS <span className="filter-count">{activeConferences.length}</span>
               </button>
-              {allLabels.map(label => (
+              {/* Always visible labels */}
+              {allLabels.filter(label => ['US', 'EU', 'ASIA', 'REMOTE'].includes(label.toUpperCase())).map(label => (
                 <button 
                   key={label}
                   className={`filter-button ${eventTypeFilter === label ? 'active' : ''}`}
                   onClick={() => setEventTypeFilter(label)}
                 >
-                  {label.toUpperCase()}
+                  {label.toUpperCase()} <span className="filter-count">{labelCounts[label]}</span>
                 </button>
               ))}
+              {!showAllFilters && allLabels.filter(label => !['US', 'EU', 'ASIA', 'REMOTE'].includes(label.toUpperCase())).length > 0 && (
+                <button 
+                  className="filter-button"
+                  onClick={() => setShowAllFilters(true)}
+                >
+                  [ + ] SHOW MORE
+                </button>
+              )}
+              {/* Additional labels when expanded */}
+              {showAllFilters && allLabels.filter(label => !['US', 'EU', 'ASIA', 'REMOTE'].includes(label.toUpperCase())).map(label => (
+                <button 
+                  key={label}
+                  className={`filter-button ${eventTypeFilter === label ? 'active' : ''}`}
+                  onClick={() => setEventTypeFilter(label)}
+                >
+                  {label.toUpperCase()} <span className="filter-count">{labelCounts[label]}</span>
+                </button>
+              ))}
+              {showAllFilters && (
+                <button 
+                  className="filter-button"
+                  onClick={() => setShowAllFilters(false)}
+                >
+                  [ - ]
+                </button>
+              )}
             </div>
             <table className="conference-table">
               <thead>

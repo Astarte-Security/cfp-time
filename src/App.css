@@ -88,7 +88,6 @@ body {
   border-top: 1px solid #4a2766;
   border-bottom: 1px solid #4a2766;
   padding: 10px 0;
-  margin-top: 20px;
   font-size: 16px;
 }
 
@@ -134,9 +133,9 @@ body {
 
 .filter-controls {
   margin-bottom: 20px;
-  text-align: center;
-  padding: 15px 0;
-  border-top: 1px solid #4a2766;
+  margin-top: 10px;
+  text-align: left;
+  padding: 10px 0;
   border-bottom: 1px solid #4a2766;
 }
 
@@ -144,6 +143,7 @@ body {
   color: #c77dff;
   margin-right: 15px;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .filter-button {
@@ -151,12 +151,13 @@ body {
   border: 1px solid #7b3f99;
   color: #b8a0ff;
   font-family: 'VT323', monospace;
-  font-size: 16px;
-  padding: 8px 16px;
-  margin: 0 5px;
+  font-size: 14px;
+  padding: 5px 12px;
+  margin: 4px 5px;
   cursor: pointer;
   transition: all 0.2s ease;
   letter-spacing: 1px;
+  display: inline-block;
 }
 
 .filter-button:hover {
@@ -171,6 +172,12 @@ body {
   color: #f0d6ff;
   border-color: #c77dff;
   text-shadow: 0 0 10px rgba(240, 214, 255, 0.4);
+}
+
+.filter-count {
+  color: #7b3f99;
+  margin-left: 5px;
+  opacity: 0.8;
 }
 
 
