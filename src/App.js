@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
 
 function App() {
@@ -9,12 +10,69 @@ function App() {
   const [showExpired, setShowExpired] = useState(false);
   const [eventTypeFilter, setEventTypeFilter] = useState('all');
   const [showAllFilters, setShowAllFilters] = useState(false);
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
+    // Initialize theme from localStorage or default to dark
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    setTheme(savedTheme);
+    document.body.setAttribute('data-theme', savedTheme);
+    
     fetchReadmeData();
     const interval = setInterval(fetchReadmeData, 60000);
     return () => clearInterval(interval);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    // Retro terminal color animation for light mode
+    if (theme === 'light') {
+      const asciiTexts = document.querySelectorAll('.ascii-text');
+      
+      // Wrap each character in a span for individual control
+      asciiTexts.forEach(textElement => {
+        const text = textElement.textContent;
+        textElement.innerHTML = text.split('').map(char => 
+          char === ' ' ? char : `<span class="retro-char">${char}</span>`
+        ).join('');
+      });
+      
+      const allChars = document.querySelectorAll('.ascii-text .retro-char');
+      
+      const retroInterval = setInterval(() => {
+        // Clear all existing pulse effects
+        allChars.forEach(char => {
+          char.classList.remove('pulse-active');
+        });
+        
+        // Randomly highlight 1-2 characters with pulse effect
+        const numHighlights = 1 + Math.floor(Math.random() * 2);
+        const selectedIndices = new Set();
+        
+        while (selectedIndices.size < numHighlights && selectedIndices.size < allChars.length) {
+          selectedIndices.add(Math.floor(Math.random() * allChars.length));
+        }
+        
+        selectedIndices.forEach(index => {
+          allChars[index].classList.add('pulse-active');
+        });
+      }, 2400); // Change every 2400ms
+      
+      return () => {
+        clearInterval(retroInterval);
+        // Restore original text
+        asciiTexts.forEach(textElement => {
+          const text = textElement.textContent;
+          textElement.textContent = text;
+        });
+      };
+    }
+  }, [theme]);
+
+  const toggleTheme = (newTheme) => {
+    setTheme(newTheme);
+    document.body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  };
 
   const fetchReadmeData = async () => {
     try {
@@ -158,6 +216,25 @@ function App() {
 
   return (
     <div className="App">
+      {ReactDOM.createPortal(
+        <div className="theme-toggle">
+          <button 
+            className={`theme-btn ${theme === 'dark' ? 'active' : ''}`}
+            onClick={() => toggleTheme('dark')}
+            title="Dark Mode"
+          >
+            ⏾
+          </button>
+          <button 
+            className={`theme-btn ${theme === 'light' ? 'active' : ''}`}
+            onClick={() => toggleTheme('light')}
+            title="Light Mode"
+          >
+            ❂
+          </button>
+        </div>,
+        document.getElementById('theme-toggle-root')
+      )}
       <div className="terminal">
         <div className="header">
           <div className="ascii-art">
