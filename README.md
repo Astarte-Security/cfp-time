@@ -24,13 +24,19 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 | [BSides Lisbon](https://bsideslisbon.org/) | September 7, 2025 | November 13-14, 2025 | Lisbon, Portugal | [CFP Link](https://cfp.bsideslisbon.org/bsideslisbon2025/cfp) | [bsides, community, EU] |
 | [BSides Cymru](https://www.bsides.cymru/) | September 12, 2025 | October 17, 2025 | Cardiff, Wales | [CFP Link](https://pretalx.com/bsides-cymru-2025/cfp) | [bsides, community, EU] |
 | [DistrictCon](https://www.districtcon.org/) | September 28, 2025 | January 24-25, 2026 | Washington DC | [Sessionize](https://sessionize.com/districtcon) | [community, US, eastcoast] |
-| [RE//verse](https://re-verse.io/) | November 14, 2025 | Mar 5-7, 2026 | Orlando, FL | [Sessionize](https://sessionize.com/reverse-2026) | [community, specialized, US, eastcoast] |
+| [RE//verse](https://re-verse.io/) | November 14, 2025 | March 5-7, 2026 | Orlando, FL | [Sessionize](https://sessionize.com/reverse-2026) | [community, specialized, US, eastcoast] |
 | [BSides Pyongyang](https://bsidespyongyang.com/) | September 22, 2025 | November 18, 2025 | Pyongyang, DPRK & Virtual | [CFP](https://docs.google.com/forms/d/e/1FAIpQLScz9MfOjoQcU432QyYM5z20G5Y8KiWJCfjnIWuCDcu5V778xw/viewform) | [bsides, community, remote] |
 | [BSides Limburg](https://www.bsides-limburg.be/) | October 31, 2025 | March 13, 2026 | Limburg, Belgium | [CFP](https://www.bsides-limburg.be/2026-edition/cfx/call-for-presentations) | [bsides, community, EU] |
 | [CactusCon](https://www.cactuscon.com/) | October 24, 2025 | February 6-7, 2026 | Mesa, AZ | [Sessionize](https://sessionize.com/cactuscon-14/) | [community, US, westcoast] |
 | [QueenCityCon](https://queencitycon.org/) | October 10, 2025 | November 7-9, 2025 | Cincinatti, OH | [CFP](https://forms.office.com/pages/responsepage.aspx?id=zKNxFqbgKEqwyXlYS8GWDZgj327xWYVPtlTS4DEr6RBUME5GVjNESTY3UDZZTEYzVjBRWUpWNVFPSSQlQCN0PWcu&route=shorturl) | [community, US, eastcoast] |
 | [BSidesRedRocks](https://www.bsidesredrocks.org/) | September 26, 2025 | November 14, 2025 | Saint George, UT | [CFP](https://sessionize.com/bsidesredrocks-2025/) | [bsides, community, US, westcoast] |
 | [CarolinaCon](https://carolinacon.org/) | October 5, 2025 | November 8-9, 2025 | Raleigh, NC & Virtual | [CFP](https://cfp.carolinacon.org/carolinacon-online-5-2024/cfp) | [community, US, remote, eastcoast] |
+| [Burning River Cyber Con](https://burningrivercybercon.com) | October 1, 2025 | November 15, 2025 | Cleveland, OH | [CFP](https://burningrivercybercon.com/call-for-papers) | [community, US, midwest] |
+| [BSidesSF](https://bsidessf.org/) | October 28th, 2025 | March 21-22, 2026 | San Francisco, CA | [CFP](https://sessionize.com/bsidessf2026) | [bsides, community, US, westcoast] |
+| [BSides San Diego](https://www.bsidessd.org/) | December 15, 2025 | April 4, 2026 | San Diego, CA | [CFP](https://sessionize.com/bsides-san-diego-2026/) | [bsides, community, US, westcoast] |
+| [BSides Reykjavik](https://bsidesreykjavik.com/) | January 9, 2026 | March 18, 2026 | Reykjavik, Iceland | [CFP](https://cfp.bsidesreykjavik.com/2026/cfp) | [bsides, community, EU] |
+| [Insomni’hack](https://insomnihack.ch/) | November 30, 2025 | March 16-20, 2026 | Lausanne, Switzerland | [CFP](https://cfp.insomnihack.ch/insomnihack-2026/cfp) | [community, EU] |
+| [HackMiami](https://www.hackmiami.com/) | February 28, 2026 | May 16, 2026 | Miami, FL | [Email CFP](mailto:cfp@hackmiami.info?subject=HackMiami%201101%20CFP&body=Presenter%20Name:%0ATalk%20Title:%0ASynopsis:%0A) | [community, US, eastcoast] |
 
 
 ## How to add a conference
