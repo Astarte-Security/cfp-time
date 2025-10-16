@@ -32,7 +32,7 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 | [BSidesRedRocks](https://www.bsidesredrocks.org/) | September 26, 2025 | November 14, 2025 | Saint George, UT | [CFP](https://sessionize.com/bsidesredrocks-2025/) | [bsides, community, US, westcoast] |
 | [CarolinaCon](https://carolinacon.org/) | October 5, 2025 | November 8-9, 2025 | Raleigh, NC & Virtual | [CFP](https://cfp.carolinacon.org/carolinacon-online-5-2024/cfp) | [community, US, remote, eastcoast] |
 | [Burning River Cyber Con](https://burningrivercybercon.com) | October 1, 2025 | November 15, 2025 | Cleveland, OH | [CFP](https://burningrivercybercon.com/call-for-papers) | [community, US, midwest] |
-| [BSidesSF](https://bsidessf.org/) | October 28th, 2025 | March 21-22, 2026 | San Francisco, CA | [CFP](https://sessionize.com/bsidessf2026) | [bsides, community, US, westcoast] |
+| [BSidesSF](https://bsidessf.org/) | October 28, 2025 | March 21-22, 2026 | San Francisco, CA | [CFP](https://sessionize.com/bsidessf2026) | [bsides, community, US, westcoast] |
 | [BSides San Diego](https://www.bsidessd.org/) | December 15, 2025 | April 4, 2026 | San Diego, CA | [CFP](https://sessionize.com/bsides-san-diego-2026/) | [bsides, community, US, westcoast] |
 | [BSides Reykjavik](https://bsidesreykjavik.com/) | January 9, 2026 | March 18, 2026 | Reykjavik, Iceland | [CFP](https://cfp.bsidesreykjavik.com/2026/cfp) | [bsides, community, EU] |
 | [Insomni’hack](https://insomnihack.ch/) | November 30, 2025 | March 16-20, 2026 | Lausanne, Switzerland | [CFP](https://cfp.insomnihack.ch/insomnihack-2026/cfp) | [community, EU] |
