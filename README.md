@@ -4,12 +4,12 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 
 ## Label Definitions
 
-- **community**: Grassroots, accessible conferences typically under $200 attendance fee, focused on knowledge sharing
-- **bsides**: Security BSides events - community-driven, volunteer-organized conferences with low barriers to entry
-- **commercial**: Professional conferences typically over $200, often vendor-focused with commercial presentations
-- **academic**: Research-focused conferences emphasizing peer-reviewed papers and academic contributions
-- **specialized**: Events focused on specific security domains (forensics, incident response, reverse engineering, etc.)
-- **US / EU / Asia / etc**: Tag by location
+- **community**: Grassroots, accessible conferences typically under $200 attendance fee, focused on knowledge sharing.
+- **bsides**: Security BSides events - community-driven, volunteer-organized conferences with low barriers to entry.
+- **commercial**: Professional conferences typically over $200, often vendor-focused with commercial presentations.
+- **academic**: Research-focused conferences emphasizing peer-reviewed papers and academic contributions.
+- **specialized**: Events focused on specific security domains (forensics, incident response, reverse engineering, etc).
+- **US / EU / Asia / etc**: Tag by location.
 
 | Conference | CFP Ends | Conference Date | Location | CFP Link | Labels |
 | ---------- | -------- | --------------- | -------- | -------- | ------ |
