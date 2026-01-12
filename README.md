@@ -40,6 +40,7 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 | [Bsides Nashville](https://bsidesnash.org/) | January 5, 2026 | May 15, 2026 | Nashville, TN | [CFP](https://sessionize.com/bsides-nashville-2026/) | [community, US, bsides, southeast |
 | [\[un]prompted](https://unpromptedcon.org/) | January 28, 2026 | March 3-4, 2026 | San Francisco, CA | [Sessionize](https://sessionize.com/unprompted-the-ai-security-practitio/) | [community, US, AI] |
 | [HackSpaceCon](https://www.hackspacecon.com/) | January 1, 2026 | May 8-9, 2026 | Cape Canaveral, FL | [CFP](https://forms.secconferences.com/secconferences1/form/CallforPapers/formperma/s27-IX9OaJwghYBk43dtYbUrRcSjLHMx15kqqUWYMDw) | [community, US, eastcoast] |
+| [PIVOTcon](https://pivotcon.org/) | February 6, 2026 | May 6-8, 2026 | Malaga, Spain | [CFP](https://pretalx.com/pivotcon26/cfp) | [specialized, EU] |
 
 
 ## How to add a conference
