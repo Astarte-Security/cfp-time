@@ -37,7 +37,9 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 | [BSides Reykjavik](https://bsidesreykjavik.com/) | January 9, 2026 | March 18, 2026 | Reykjavik, Iceland | [CFP](https://cfp.bsidesreykjavik.com/2026/cfp) | [bsides, community, EU] |
 | [Insomni’hack](https://insomnihack.ch/) | November 30, 2025 | March 16-20, 2026 | Lausanne, Switzerland | [CFP](https://cfp.insomnihack.ch/insomnihack-2026/cfp) | [community, EU] |
 | [HackMiami](https://www.hackmiami.com/) | February 28, 2026 | May 16, 2026 | Miami, FL | [Email CFP](mailto:cfp@hackmiami.info?subject=HackMiami%201101%20CFP&body=Presenter%20Name:%0ATalk%20Title:%0ASynopsis:%0A) | [community, US, eastcoast] |
-| [Bsides Nashville](https://bsidesnash.org/) | January 5, 2026 | May 15, 2026 | Nashville, TN | [CFP](https://sessionize.com/bsides-nashville-2026/) | [community, US, bsides, southeast] |
+| [Bsides Nashville](https://bsidesnash.org/) | January 5, 2026 | May 15, 2026 | Nashville, TN | [CFP](https://sessionize.com/bsides-nashville-2026/) | [community, US, bsides, southeast |
+| [\[un]prompted](https://unpromptedcon.org/) | January 28, 2026 | March 3-4, 2026 | San Francisco, CA | [Sessionize](https://sessionize.com/unprompted-the-ai-security-practitio/) | [community, US, AI] |
+| [HackSpaceCon](https://www.hackspacecon.com/) | January 1, 2026 | May 8-9, 2026 | Cape Canaveral, FL | [CFP](https://forms.secconferences.com/secconferences1/form/CallforPapers/formperma/s27-IX9OaJwghYBk43dtYbUrRcSjLHMx15kqqUWYMDw) | [community, US, eastcoast] |
 | [PIVOTcon](https://pivotcon.org/) | February 6, 2026 | May 6-8, 2026 | Malaga, Spain | [CFP](https://pretalx.com/pivotcon26/cfp) | [specialized, EU] |
 
 
