@@ -42,8 +42,8 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 | [HackSpaceCon](https://www.hackspacecon.com/) | January 1, 2026 | May 8-9, 2026 | Cape Canaveral, FL | [CFP](https://forms.secconferences.com/secconferences1/form/CallforPapers/formperma/s27-IX9OaJwghYBk43dtYbUrRcSjLHMx15kqqUWYMDw) | [community, US, eastcoast] |
 | [PIVOTcon](https://pivotcon.org/) | February 6, 2026 | May 6-8, 2026 | Malaga, Spain | [CFP](https://pretalx.com/pivotcon26/cfp) | [specialized, EU] |
 | [Cackalackycon](https://www.cackalackycon.org/) | February, 15, 2026 | May 15-17, 2026 | Durham, NC | [CFP](https://sessionize.com/cackalackycon-2026) | [community, US, eastcoast] |
-| [NorthSec 2026](https://nsec.io/cfp/) | March 2nd, 2026 | May 14-15, 2026 | Montreal, Canada | [CFP](https://cfp.nsec.io/2026/cfp) | [community, US, Canada, eastcoast] |
-| [Bsides Dayton](https://bsidesdayton.com/submissions/) | March 20th, 2026 | May 23, 2026 | Dayton, OH | [CFP](https://bsidesdayton.com/submissions/#submission-form) | [community, bsides, US, eastcoast] |
+| [NorthSec 2026](https://nsec.io/cfp/) | March 2, 2026 | May 14-15, 2026 | Montreal, Canada | [CFP](https://cfp.nsec.io/2026/cfp) | [community, US, Canada, eastcoast] |
+| [Bsides Dayton](https://bsidesdayton.com/submissions/) | March 20, 2026 | May 23, 2026 | Dayton, OH | [CFP](https://bsidesdayton.com/submissions/#submission-form) | [community, bsides, US, eastcoast] |
 
 
 ## How to add a conference
