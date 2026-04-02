@@ -46,12 +46,13 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 | [Bsides Dayton](https://bsidesdayton.com/submissions/) | March 20, 2026 | May 23, 2026 | Dayton, OH | [CFP](https://bsidesdayton.com/submissions/#submission-form) | [community, bsides, US, eastcoast] |
 | [The Diana Initiative 2026](https://www.dianainitiative.org/) | April 13, 2026 | May 30, 2026 | Online | [CFP](https://sessionize.com/tdi-online-2026/) | [community, remote] |
 | [Red Team Village at Defcon34](https://redteamvillage.io/) | May 31, 2026 | August 7-9, 2026 | Las Vegas, NV | [CFP](https://sessionize.com/rtv-at-dc34/) | [community, US, westcoast] |
-| [Game Hacking Village at Defcon34](https://www.gamehacking.gg/) | Jun 14, 2026 | August 7-9, 2026 | Las Vegas, NV | [CFP](https://www.gamehacking.gg/cfp) | [community, US, gaming, westcoast] |
+| [Game Hacking Village at Defcon34](https://www.gamehacking.gg/) | June 14, 2026 | August 7-9, 2026 | Las Vegas, NV | [CFP](https://www.gamehacking.gg/cfp) | [community, US, gaming, westcoast] |
 | [GrrCon](https://grrcon.com/) | May 1, 2026 | September 24-25, 2026 | Grand Rapids, MI | [CFP](https://grrcon.com/cfp/) | [community, US, midwest] |
 | [Defcon34](https://defcon.org/html/defcon-34/dc-34-cfp.html) | May 1, 2026 | August 7-9, 2026 | Las Vegas, NV | [CFP](https://www.openconf.org/defcon34/track1/openconf.php) | [community, US, westcoast] |
 | [RECON](https://recon.cx) | April 11, 2026 | June 19-21, 2026 | Montreal, CA | [CFP](https://cfp.recon.cx/recon-2026/cfp) | [community, canada, eastcoast, specialized] |
 | [HOPE26](https://hope.net/) | June 1, 2026 | August 14-16, 2026 | NYC, NY | [CFP](https://www.hope.net/call-for-speakers/) | [community, US, eastcoast] |
 | [Bsides Las Vegas](https://bsideslv.org/) | May 8, 2026 | August 3-5, 2026 | Las Vegas, NV | [CFP](https://bsideslv.org/cfp) | [community, US, westcoast, bsides] |
+| [Summercon](https://www.summercon.org/) | May 15, 2026 | July 10, 2026 | NYC, NY | [CFP](https://www.summercon.org/) | [community, US, eastcoast] |
 
 
 ## How to add a conference
