@@ -44,6 +44,10 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 | [Cackalackycon](https://www.cackalackycon.org/) | February, 15, 2026 | May 15-17, 2026 | Durham, NC | [CFP](https://sessionize.com/cackalackycon-2026) | [community, US, eastcoast] |
 | [NorthSec 2026](https://nsec.io/cfp/) | March 2, 2026 | May 14-15, 2026 | Montreal, Canada | [CFP](https://cfp.nsec.io/2026/cfp) | [community, US, Canada, eastcoast] |
 | [Bsides Dayton](https://bsidesdayton.com/submissions/) | March 20, 2026 | May 23, 2026 | Dayton, OH | [CFP](https://bsidesdayton.com/submissions/#submission-form) | [community, bsides, US, eastcoast] |
+| [The Diana Initiative 2026](https://www.dianainitiative.org/) | April 13, 2026 | May 30, 2026 | Online | [CFP](https://sessionize.com/tdi-online-2026/) | [community, remote] |
+| [Red Team Village at Defcon34](https://redteamvillage.io/) | May 31, 2026 | August 7-9, 2026 | Las Vegas, NV | [CFP](https://sessionize.com/rtv-at-dc34/) | [community, US, westcoast] |
+| [Game Hacking Village at Defcon34](https://www.gamehacking.gg/) | Jun 14, 2026 | August 7-9, 2026 | Las Vegas, NV | [CFP](https://www.gamehacking.gg/cfp) | [community, US, gaming, westcoast] |
+| [GrrCon](https://grrcon.com/) | May 1, 2026 | September 24-25, 2026 | Grand Rapids, MI | [CFP](https://grrcon.com/cfp/) | [community, US, midwest] |
 
 
 ## How to add a conference
