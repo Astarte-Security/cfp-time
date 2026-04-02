@@ -50,6 +50,8 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 | [GrrCon](https://grrcon.com/) | May 1, 2026 | September 24-25, 2026 | Grand Rapids, MI | [CFP](https://grrcon.com/cfp/) | [community, US, midwest] |
 | [Defcon34](https://defcon.org/html/defcon-34/dc-34-cfp.html) | May 1, 2026 | August 7-9, 2026 | Las Vegas, NV | [CFP](https://www.openconf.org/defcon34/track1/openconf.php) | [community, US, westcoast] |
 | [RECON](https://recon.cx) | April 11, 2026 | June 19-21, 2026 | Montreal, CA | [CFP](https://cfp.recon.cx/recon-2026/cfp) | [community, canada, eastcoast, specialized] |
+| [HOPE26](https://hope.net/) | June 1, 2026 | August 14-16, 2026 | NYC, NY | [CFP](https://www.hope.net/call-for-speakers/) | [community, US, eastcoast] |
+| [Bsides Las Vegas](https://bsideslv.org/) | May 8, 2026 | August 3-5, 2026 | Las Vegas, NV | [CFP](https://bsideslv.org/cfp) | [community, US, westcoast, bsides] |
 
 
 ## How to add a conference
