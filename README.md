@@ -53,6 +53,7 @@ List of cybersecurity conference CFP deadlines, hosted at [cfp.hex.dance](https:
 | [HOPE26](https://hope.net/) | June 1, 2026 | August 14-16, 2026 | NYC, NY | [CFP](https://www.hope.net/call-for-speakers/) | [community, US, eastcoast] |
 | [Bsides Las Vegas](https://bsideslv.org/) | May 8, 2026 | August 3-5, 2026 | Las Vegas, NV | [CFP](https://bsideslv.org/cfp) | [community, US, westcoast, bsides] |
 | [Summercon](https://www.summercon.org/) | May 15, 2026 | July 10, 2026 | NYC, NY | [CFP](https://www.summercon.org/) | [community, US, eastcoast] |
+| [SunSecCon 2027](https://www.sunseccon.org/) | December 15, 2026 | April 1-2, 2027 | Pasadena, CA | [CFP](https://www.sunseccon.org/2027/cfp) | [community, US, westcoast] |
 
 
 ## How to add a conference
